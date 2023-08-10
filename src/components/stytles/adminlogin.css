@@ -1,0 +1,25 @@
+.mainadmin {
+  background-color: darkgray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.login1 {
+  position: relative;
+  border-radius: 10px;
+  background-color: rgb(228, 42, 42);
+  color: white;
+  font-weight: 900;
+  width: 50%;
+  margin-left: 23%;
+  margin-top: 10%;
+  height: 50%;
+  text-align: center;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+img.oyologo1 {
+  position: absolute;
+}

@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Main from './components/Main'
+import Admin from './components/Admin'
+import Customer from './components/Customer'
+import { useState } from 'react'
+import AdminLogin from './components/AdminLogin'
+import CustomerLogin from './components/CustomerLogin'
+import Bookings from './components/Bookings'
 
-function App() {
+
+const App = () => {
+
+  // main state
+  const [rooms, setRooms] = useState([]);
+
+  // adding data
+  const addRoom = (newRoom) => {
+    setRooms([...rooms, newRoom]);
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <Routes>
+    <Route path='/' element={<Main></Main>}></Route>
+    <Route path='/Admin' element={<Admin addRoom={addRoom} rooms={rooms}></Admin>}></Route>
+    <Route path='/Customer' element={<Customer rooms={rooms}></Customer>}></Route>
+    <Route path='/AdminLogin' element={<AdminLogin></AdminLogin>}></Route>
+    <Route path='/CustomerLogin' element={<CustomerLogin></CustomerLogin>}></Route>
+    <Route path='/Bookings' element={<Bookings></Bookings>}></Route>
+
+    
+  </Routes>
+  )
 }
 
-export default App;
+export default App

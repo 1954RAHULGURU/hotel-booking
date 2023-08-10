@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.imgdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.insideimg {
+  margin: 10px;
+}
+
+.mappdivcustomer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  flex-wrap: wrap;
+}
+
+.mapitemdiv {
+  margin: 10px;
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Tektur");
+
+.testmaindiv1 {
+  position: absolute;
+  background-color: #566363;
+  font-family: "Tektur";
+}
+
+.testmaindiv {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 23%;
+  margin-top: 12%;
+  height: 45%;
+  width: 50%;
+  text-align: center;
+  padding: 25px;
+  background-color: #6f4cd9;
+  border-radius: 8px;
+}
+
+.mapdivtest{
+  /* box-sizing: border-box; */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+
+}
+
+.insidemapdivtest{
+  /* box-sizing: border-box; */
+  margin: 1%;
+
+
+ 
+
+  
+
+}

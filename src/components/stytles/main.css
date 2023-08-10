@@ -1,0 +1,45 @@
+.maindiv {
+  text-align: center;
+}
+
+.headeroyo {
+  margin: 1%;
+  display: flex;
+}
+
+h1.title {
+  margin-left: 10px;
+}
+
+.login01 {
+  margin-left: 23%;
+}
+
+.login2 {
+  margin-left: 2%;
+}
+
+.details1 {
+  background-color: rgb(233, 63, 63);
+}
+
+.details2 {
+  display: flex;
+}
+
+.details3 {
+  display: flex;
+}
+
+.details4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  background-color: grey;
+  padding: 50px;
+}
+
+img.logo {
+  margin-bottom: -10%;
+}
